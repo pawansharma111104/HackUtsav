@@ -1,0 +1,98 @@
+/* src/AboutUs.css */
+
+.about-us-container {
+    padding: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ecf0f1; /* Light text for dark background */
+    background-color: #1c1e22; /* Dark background color */
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro-section h1 {
+    font-size: 3.5rem;
+    color: #76ff03; /* Bright green for contrast */
+    text-transform: uppercase;
+}
+
+.intro-section p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #bdc3c7; /* Lighter gray text */
+}
+
+.mission-section,
+.hack-section,
+.participate-section,
+.vision-section,
+.organizers-section,
+.join-section {
+    margin-bottom: 3rem;
+    background: #2c2f33; /* Darker background for sections */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow for dark theme */
+    transition: all 0.3s ease-in-out;
+}
+
+.mission-section:hover,
+.hack-section:hover,
+.participate-section:hover,
+.vision-section:hover,
+.organizers-section:hover,
+.join-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More noticeable shadow effect */
+}
+
+.mission-section h2,
+.hack-section h2,
+.participate-section h2,
+.vision-section h2,
+.organizers-section h2,
+.join-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #ecf0f1; /* Light text for headings */
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #76ff03; /* Underline with bright green */
+}
+
+h2 .icon {
+    margin-right: 0.5rem;
+    color: #76ff03; /* Same bright green for icons */
+}
+
+.mission-section p,
+.hack-section p,
+.vision-section p,
+.organizers-section p,
+.join-section p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #bdc3c7; /* Light gray text for paragraphs */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    color: #ecf0f1; /* Light text */
+}
+
+ul li::before {
+    content: "•";
+    color: #76ff03; /* Green bullet points */
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}

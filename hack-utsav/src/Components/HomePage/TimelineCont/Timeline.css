@@ -1,0 +1,16 @@
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+  }
+  
+  .timeline-item {
+    width: 100%;
+    max-width: 2000px;
+  }
+  
+  .timeline-image {
+    width: 100%;
+    height: auto;
+  }
