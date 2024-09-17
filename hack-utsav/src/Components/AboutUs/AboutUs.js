@@ -62,12 +62,12 @@ const AboutUs = () => {
       <section className="organizers-section">
         <h2><FaCogs className="icon" /> The Organizers</h2>
         <p>
-        Hackउत्सव is organized by a dedicated team from <em>The Northcap University</em>, supported by industry professionals and tech enthusiasts. Our goal is to provide an inclusive and enriching experience for all participants.
+        Hackउत्सव is organized by a dedicated team from <em>The Northcap University</em>, in collaboration with <strong>IEEE NCU</strong> and <strong>ACM NCU</strong>, supported by industry professionals and tech enthusiasts. Our goal is to provide an inclusive and enriching experience for all participants.
         </p>
         <ul>
-          <li><strong>Event Coordinators:</strong> [Coordinator Name(s)]</li>
+          {/* <li><strong>Event Coordinators:</strong> [Coordinator Name(s)]</li>
           <li><strong>Student Volunteers:</strong> [Volunteer Team Name]</li>
-          <li><strong>Technical Support:</strong> [Tech Support Team Name]</li>
+          <li><strong>Technical Support:</strong> [Tech Support Team Name]</li> */}
         </ul>
       </section>
 
@@ -76,6 +76,24 @@ const AboutUs = () => {
         <h2><FaRocket className="icon" /> Join Us</h2>
         <p>Be part of something bigger! Join Hackउत्सव and challenge yourself to build the future, one line of code at a time.</p>
       </section>
+
+      {/* Map Section */}
+      <section className="map-section">
+        <h2><FaRocket className="icon" /> Find Us</h2>
+        <p>Be part of something bigger! Join Hackउत्सव and challenge yourself to build the future, one line of code at a time.</p>
+        <a 
+          href="https://www.google.com/maps/place/The+NorthCap+University/@28.5036265,77.0472747,17z/data=!3m1!4b1!4m6!3m5!1s0x390d199c98e90ff1:0x8b2aa76c53fb738e!8m2!3d28.5036218!4d77.049855!16s%2Fm%2F0glnr8d?entry=ttu&g_ep=EgoyMDI0MDkxNS4wIKXMDSoASAFQAw%3D%3D" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <img 
+            src="https://res.cloudinary.com/ddznylzdr/image/upload/v1726556982/jgq20fql7wtgblwlhrer.png" 
+            alt="Map location"
+            className="map-image"
+          />
+        </a>
+      </section>
+
     </div>
     </>
   );

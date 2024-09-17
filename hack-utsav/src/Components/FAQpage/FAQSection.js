@@ -53,6 +53,7 @@ const FAQ = () => {
     { question: "Are there any prizes for the winners?", answer: "Yes, the top three overall winners will receive: 1st Prize: ₹25,000 2nd Prize: ₹20,000 3rd Prize: ₹15,000 Additionally, there are theme-specific prizes of ₹10,000 for each theme" },
     { question: "Will there be accommodation for outstation participants?", answer: "Yes, free lodging is available for the first 100 teams. For others, accommodation is provided at a nominal charge of ₹500 per participant." },
     { question: " What is the duration of the hackathon?", answer: "HackUtsav is a 36-hour hackathon that starts on 15th October 2024 at 12:00 AM and concludes on 16th October 2024 at 6:00 PM." },
+    { question: "How many teams will be selected after the first round of idea submission?", answer: "Only the top 5-6 teams will be selected after the first round of idea submission to proceed to the final hackathon event."}
   ];
 
   return (
