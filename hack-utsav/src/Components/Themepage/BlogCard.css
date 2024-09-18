@@ -14,6 +14,8 @@
 .blog-card:hover {
   transform: translateY(-12px); /* Slightly bigger hover effect */
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.25); /* Increase shadow on hover */
+  background-color: rgb(60, 160, 60);
+  border: green solid 2px;
 }
 
 .meta {

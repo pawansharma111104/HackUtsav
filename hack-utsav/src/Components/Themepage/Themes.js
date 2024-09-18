@@ -1,7 +1,6 @@
 import React from "react";
 import BlogCard from './BlogCard';
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 // Import GIFs from the assets folder
 // import health from '../assets/health.gif';
 // import edu from '../assets/edu.gif';
@@ -29,7 +28,7 @@ function Themes() {
               <li>Create platforms for sharing healthcare data to improve medical research and treatment outcomes.</li>
             </ul>
           }
-          alt={false}
+          alt={false} // Image on the right
         />
         
         <BlogCard 
@@ -43,7 +42,7 @@ function Themes() {
               <li>Design tools to measure and improve educational outcomes in remote or marginalized areas.</li>
             </ul>
           }
-          alt={true}
+          alt={true} // Image on the left
         />
         
         <BlogCard 
@@ -60,7 +59,7 @@ function Themes() {
               <li>Design innovative solutions for decentralized energy generation in rural areas.</li>
             </ul>
           }
-          alt={true}
+          alt={false} // Image on the right
         />
         
         <BlogCard 
@@ -77,7 +76,7 @@ function Themes() {
               <li>Design solutions for climate resilience and adaptation in vulnerable communities.</li>
             </ul>
           }
-          alt={true}
+          alt={true} // Image on the left
         />
         
         <BlogCard 
@@ -92,7 +91,7 @@ function Themes() {
               <li>Develop cybersecurity training platforms for organizations engaged in sustainable development.</li>
             </ul>
           }
-          alt={true}
+          alt={false} // Image on the right
         />
         <BlogCard 
           imageUrl="https://res.cloudinary.com/ddznylzdr/image/upload/v1726505827/yq0yd2dvwcz0jm0eyabv.png"
@@ -105,7 +104,7 @@ function Themes() {
               <li>Bring your creative ideas, no matter the field, and turn them into impactful solutions.</li>
             </ul>
           }
-          alt={true}
+          alt={true} // Image on the left
         />
       </div>
     </div>
