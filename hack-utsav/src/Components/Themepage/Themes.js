@@ -1,6 +1,7 @@
 import React from "react";
 import BlogCard from './BlogCard';
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 // Import GIFs from the assets folder
 // import health from '../assets/health.gif';
 // import edu from '../assets/edu.gif';
@@ -108,6 +109,7 @@ function Themes() {
         />
       </div>
     </div>
+    <Footer></Footer>
     </>
   );
 }

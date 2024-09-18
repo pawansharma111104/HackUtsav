@@ -11,8 +11,9 @@ const HackathonContainer = () => {
         <img src="https://res.cloudinary.com/dvhislzt0/image/upload/v1726653273/mrgadfwbwb7r9opn23ob.jpg" alt="Hackathon" className="hackathon-image" />
         {/* <h1 className="hackathon-title">HACKउत्सव 1.O 2024</h1> */}
       </div>
-
+      
       <div className="right-section">
+      
         <h2 className="event-subtitle">Innovate, Create & Compete</h2>
         {/* <p className="hackathon-date">15-16 October 2024</p> */}
         <p className="hackathon-description">
@@ -40,7 +41,8 @@ const HackathonContainer = () => {
           >
             <FaDiscord className="icon" /> Discord
           </button>
-        </div>
+          </div>
+        
       </div>
     </div>
   );

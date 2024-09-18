@@ -3,6 +3,7 @@ import React from 'react';
 import './AboutUs.css';
 import { FaRocket, FaUniversity, FaUsers, FaLightbulb, FaNetworkWired, FaCogs } from 'react-icons/fa'; // Importing icons
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const AboutUs = () => {
   return (
@@ -111,6 +112,7 @@ const AboutUs = () => {
       </section>
 
     </div>
+    <Footer></Footer>
     </>
   );
 };

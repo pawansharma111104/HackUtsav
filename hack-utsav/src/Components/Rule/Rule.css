@@ -1,0 +1,98 @@
+/* General Styling for the Rules page */
+.rules-container {
+    padding: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ecf0f1; /* Light text for dark background */
+    background-color: #1c1e22; /* Dark background color */
+}
+.intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro-section h1 {
+    font-size: 3.5rem;
+    color: #76ff03; /* Bright green for contrast */
+    text-transform: uppercase;
+}
+
+.intro-section p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #bdc3c7; /* Lighter gray text */
+}
+/* Section Styles */
+.rules-section {
+    margin-bottom: 3rem;
+    background: #2c2f33; /* Darker background for sections */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow for dark theme */
+    transition: all 0.3s ease-in-out;
+}
+
+.rules-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More noticeable shadow effect */
+}
+
+/* Section Headings */
+.rules-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: #ecf0f1; /* Light text for headings */
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #76ff03; /* Underline with bright green */
+}
+
+h1 .icon {
+    margin-right: 0.5rem;
+    color: #76ff03; /* Same bright green for icons */
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    color: #ecf0f1; /* Light text */
+}
+
+ul li::before {
+    content: "•";
+    color: #76ff03; /* Green bullet points */
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    .rules-container {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .rules-section h1 {
+        font-size: 1.8rem; /* Smaller section headings */
+    }
+
+    .rules-section ul li {
+        font-size: 1rem; /* Smaller list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .rules-section h1 {
+        font-size: 1.6rem; /* Further reduce heading size on extra small devices */
+    }
+
+    .rules-section ul li {
+        font-size: 0.9rem; /* Smaller list items for extra small devices */
+    }
+}

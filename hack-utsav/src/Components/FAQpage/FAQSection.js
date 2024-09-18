@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './FAQ.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const FAQItem = ({ question, answer, id, isOpen, onToggle }) => (
   <div className="faq-item">
@@ -70,6 +71,7 @@ const FAQ = () => {
         </div>
       </div>
     </section>
+    <Footer></Footer>
     </>
   );
 };

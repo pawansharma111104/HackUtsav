@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
 /* Main container styling */
 .hackathon-container {
     display: flex;
@@ -23,7 +25,7 @@
     align-items: center;
     text-align: center;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 100px;
     max-width: 600px;
     position: relative; /* Needed for image effects */
 }
@@ -144,12 +146,73 @@
     margin-right: 5px; /* Space between icon and text */
 }
 
+/* Circular animation overlay */
+.h {
+    position: relative;
+    text-align: center;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/overlay.png");
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border: 4px solid white;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h h1, .h h2 {
+    position: absolute;
+    z-index: 3;
+    text-transform: uppercase;
+    text-shadow: 0px 10px rgba(0, 0, 0, .15);
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.h h1 {
+    letter-spacing: 28px;
+    font-size: 14px;
+    top: 50%;
+}
+
+.h h2 {
+    letter-spacing: 10px;
+    font-size: 10px;
+    top: 60%;
+}
+
+.h .c {
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 400px;
+    position: absolute;
+    margin: auto;
+}
+
+@for $i from 1 through 60 {
+    .h .c:nth-of-type(#{$i}) {
+        box-shadow: 3px 0px rgba(255, 255, 255, -($i/40)), 6px -5px rgba(10, 0, 0, -($i/40));
+        width: ($i * 6) + 0px;
+        height: ($i * 1) + 0px;
+        right: ($i * 10) + 0px;
+        bottom: ($i * 10) + 0px;
+        -webkit-filter: blur($i/3 + 8px);
+        transform-origin: ($i * 4) + 0px ($i * 2) + 0px;
+        animation: spin 3s ($i/10) + 0s linear infinite;
+        background: rgba(63 + ($i * 3), 241 + ($i * 1), 187, 1 - ($i/80));
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .hackathon-container {
         flex-direction: column;
         text-align: center;
-        padding: 20px; /* Reduce padding for smaller screens */
+        padding: 20px;
     }
 
     .left-section, .right-section {
@@ -158,7 +221,7 @@
     }
 
     .hackathon-title {
-        font-size: 3rem; /* Adjust title size for smaller screens */
+        font-size: 3rem;
     }
 
     .community-btns {
@@ -167,26 +230,26 @@
     }
 
     .register-btn {
-        min-width: auto; /* Remove min-width for smaller screens */
-        width: 100%; /* Make the button full width */
+        min-width: auto;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .hackathon-title {
-        font-size: 2.5rem; /* Further reduce title size for small phones */
+        font-size: 2.5rem;
     }
 
     .hackathon-image {
-        margin-left: 0; /* Remove left margin for better centering */
-        max-width: 90%; /* Restrict image width for small phones */
+        margin-left: 0;
+        max-width: 90%;
     }
 
     .register-btn {
-        padding: 12px 30px; /* Adjust padding for smaller devices */
+        padding: 12px 30px;
     }
 
     .right-section {
-        padding-left: 0; /* Remove padding for better mobile layout */
+        padding-left: 0;
     }
 }
