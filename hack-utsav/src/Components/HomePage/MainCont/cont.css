@@ -3,15 +3,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px; /* Reduce padding to shift title upwards */
+    padding: 50px;
     background-color: #0f3d29; /* Darker green background */
     color: #ffffff;
     min-height: 500px;
     border-radius: 0px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 100%;
-    position: relative;/* Ensure positioning context for vertical centering */
-    
+    position: relative;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
 
 /* Left section (title block) */
@@ -19,21 +19,45 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Push content upwards */
+    justify-content: center; /* Center content vertically */
     align-items: center;
     text-align: center;
-    margin-top: -90px;
-    margin-left:-1400px;
-    max-width: 700px; /* Shift title slightly upwards */
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 600px;
+    position: relative; /* Needed for image effects */
 }
 
 /* Hackathon title */
 .hackathon-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
     color: #85e09e;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+}
+
+/* Hackathon image with light effect */
+.hackathon-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8; /* Image blends with background */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    filter: brightness(80%); /* Darken image slightly to blend with background */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded edges for appeal */
+    margin-left: auto;
+    margin-right: auto; /* Center image horizontally */
+    /* Light effect */
+    box-shadow: 0 0 30px 15px rgba(133, 224, 158, 0.6); /* Light green glow behind image */
+}
+
+/* Hover effect for image */
+.hackathon-image:hover {
+    opacity: 1;
+    filter: brightness(100%); /* Brighten the image on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 0 50px 25px rgba(133, 224, 158, 0.8); /* Intensified light glow on hover */
 }
 
 /* Right section (event details) */
@@ -41,8 +65,12 @@
     flex: 1;
     padding-left: 30px;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 0;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 /* Event subtitle */
@@ -50,13 +78,6 @@
     font-size: 2.2rem;
     font-weight: bold;
     color: #d9f5e0;
-}
-
-/* Hackathon date */
-.hackathon-date {
-    font-size: 1.6rem;
-    margin-top: 10px;
-    color: #a5e4b9;
 }
 
 /* Hackathon description */
@@ -85,16 +106,14 @@
     background-color: #145f3a;
 }
 
+/* Community buttons */
 .community-btns {
     display: flex; /* Aligns buttons horizontally */
     gap: 10px; /* Space between buttons */
-  }
-  
-  .whatsapp-btn,
-  .discord-btn {
-    background-color: #25D366; /* WhatsApp button color */
-    color: #fff; /* Text color */
-    
+}
+
+.whatsapp-btn,
+.discord-btn {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -102,38 +121,72 @@
     font-size: 1rem;
     display: flex; /* Align icon and text */
     align-items: center; /* Center icon vertically */
-  }
-  
-  .whatsapp-btn:hover {
+    color: #fff; /* Text color */
+}
+
+.whatsapp-btn {
+    background-color: #25D366; /* WhatsApp button color */
+}
+
+.whatsapp-btn:hover {
     background-color: #128C7E; /* Darker WhatsApp color on hover */
-  }
-  
-  .discord-btn {
+}
+
+.discord-btn {
     background-color: #7289DA; /* Discord button color */
-  }
-  
-  .discord-btn:hover {
+}
+
+.discord-btn:hover {
     background-color: #5B6EFA; /* Darker Discord color on hover */
-  }
-  
-  .icon {
+}
+
+.icon {
     margin-right: 5px; /* Space between icon and text */
-  }
-  
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
     .hackathon-container {
         flex-direction: column;
         text-align: center;
+        padding: 20px; /* Reduce padding for smaller screens */
     }
 
-    .right-section {
-        margin-top: 30px;
-        padding-left: 0;
+    .left-section, .right-section {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .hackathon-title {
+        font-size: 3rem; /* Adjust title size for smaller screens */
     }
 
     .community-btns {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .register-btn {
+        min-width: auto; /* Remove min-width for smaller screens */
+        width: 100%; /* Make the button full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .hackathon-title {
+        font-size: 2.5rem; /* Further reduce title size for small phones */
+    }
+
+    .hackathon-image {
+        margin-left: 0; /* Remove left margin for better centering */
+        max-width: 90%; /* Restrict image width for small phones */
+    }
+
+    .register-btn {
+        padding: 12px 30px; /* Adjust padding for smaller devices */
+    }
+
+    .right-section {
+        padding-left: 0; /* Remove padding for better mobile layout */
     }
 }

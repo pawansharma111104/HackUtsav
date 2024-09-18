@@ -21,7 +21,7 @@ function Themes() {
           />
           <Cards 
             title="Clean Water & Clean Energy"
-            imgSrc="https://res.cloudinary.com/ddznylzdr/image/upload/v1726505532/djkq5oys2gqucrsmlcl4.gif"
+            imgSrc="https://res.cloudinary.com/ddznylzdr/image/upload/v1726505735/joylogaej7e7sn0kt32p.gif"
             alt="Sustainability theme illustration"
           />
           <Cards 

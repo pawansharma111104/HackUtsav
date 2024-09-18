@@ -1,0 +1,35 @@
+.footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    /* width: 100%; */
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 10px; /* Adds space between text and logos */
+    font-weight: bold;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+    margin-bottom: 7px;
+}
+
+.org-logo {
+    height: 40px; /* Adjust the size as necessary */
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .org-logo {
+        height: 30px; /* Smaller size for mobile */
+    }
+}

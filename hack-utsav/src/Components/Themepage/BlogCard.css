@@ -1,105 +1,142 @@
 .blog-card {
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    max-width: 900px; /* Increase max-width for larger cards */
-    margin: 40px auto; /* Increase margin for better spacing */
-    border-radius: 20px; /* Larger border-radius for a modern look */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Deep shadow for better elevation */
-    overflow: hidden;
-    background-color: #ffffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .blog-card:hover {
-    transform: translateY(-12px); /* Slightly bigger hover effect */
-    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.25); /* Increase shadow on hover */
-  }
-  
-  .meta {
-    height: 300px; /* Increase height for more prominent image display */
-    overflow: hidden;
-  }
-  
-  .photo {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.4s ease;
-  }
-  
-  .blog-card:hover .photo {
-    transform: scale(1.1); /* Add scale effect on hover for dynamic feel */
-  }
-  
-  .description {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #2c2c2c; /* Darker text color for better readability */
-    background-color: #f7f9fc;
-  }
-  
-  .description h1 {
-    margin: 0 0 15px;
-    font-size: 28px;
-    font-weight: 700;
-    color: #1b1b1b; /* Darker color for the title */
-  }
-  
-  .description h2 {
-    margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: 500;
-    color: #333333; /* Subtle but darker color for subtitle */
-  }
-  
-  .description p, .description li {
-    margin-bottom: 30px;
-    line-height: 1.8;
-    font-size: 18px;
-    color: #4a4a4a; /* Slightly lighter but still dark text color */
-  }
-  
-  .description ul {
-    padding-left: 20px;
-  }
-  
-  @media (min-width: 640px) {
-    .blog-card {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px; /* Increase max-width for larger cards */
+  margin: 40px auto; /* Increase margin for better spacing */
+  border-radius: 20px; /* Larger border-radius for a modern look */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Deep shadow for better elevation */
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-12px); /* Slightly bigger hover effect */
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.25); /* Increase shadow on hover */
+}
+
+.meta {
+  height: 300px; /* Increase height for more prominent image display */
+  overflow: hidden;
+}
+
+.photo {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .photo {
+  transform: scale(1.1); /* Add scale effect on hover for dynamic feel */
+}
+
+.description {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2c2c2c; /* Darker text color for better readability */
+  background-color: #f7f9fc;
+}
+
+.description h1 {
+  margin: 0 0 15px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1b1b1b; /* Darker color for the title */
+}
+
+.description h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333333; /* Subtle but darker color for subtitle */
+}
+
+.description p, .description li {
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #4a4a4a; /* Slightly lighter but still dark text color */
+}
+
+.description ul {
+  padding-left: 20px;
+}
+
+/* Responsive for screens larger than 640px (Tablets and Desktops) */
+@media (min-width: 640px) {
+  .blog-card {
       flex-direction: row; /* Row layout for larger screens */
-    }
-  
-    .meta {
-      flex-basis: 50%;
+  }
+
+  .meta {
+      flex-basis: 50%; /* Split half for image */
       height: auto;
-    }
-  
-    .description {
-      flex-basis: 50%;
+  }
+
+  .description {
+      flex-basis: 50%; /* Split half for content */
       padding-left: 40px; /* Larger padding on larger screens */
-    }
-  
-    .blog-card.alt {
+  }
+
+  .blog-card.alt {
       flex-direction: row-reverse; /* Reverse layout for alternate design */
-    }
   }
-  
-  @media (max-width: 639px) {
-    .blog-card {
+}
+
+/* Responsive for screens smaller than 640px (Mobile and smaller tablets) */
+@media (max-width: 639px) {
+  .blog-card {
       margin: 20px auto; /* Adjust margins for mobile */
-    }
-  
-    .description h1 {
-      font-size: 24px; /* Adjust title size for mobile */
-    }
-  
-    .description h2 {
-      font-size: 18px; /* Adjust subtitle size for mobile */
-    }
-  
-    .description p {
-      font-size: 16px; /* Adjust paragraph size for mobile */
-    }
   }
+
+  .meta {
+      height: 250px; /* Adjust image height for mobile */
+  }
+
+  .description {
+      padding: 20px; /* Reduce padding on mobile */
+  }
+
+  .description h1 {
+      font-size: 24px; /* Adjust title size for mobile */
+  }
+
+  .description h2 {
+      font-size: 18px; /* Adjust subtitle size for mobile */
+  }
+
+  .description p {
+      font-size: 16px; /* Adjust paragraph size for mobile */
+  }
+}
+
+/* Responsive for extra small screens (below 480px) */
+@media (max-width: 480px) {
+  .blog-card {
+      margin: 15px auto; /* Further reduce margin for smaller screens */
+  }
+
+  .meta {
+      height: 220px; /* Further reduce image height for small screens */
+  }
+
+  .description {
+      padding: 15px; /* Reduce padding more for extra small screens */
+  }
+
+  .description h1 {
+      font-size: 20px; /* Smaller font for the title on extra small screens */
+  }
+
+  .description h2 {
+      font-size: 16px; /* Adjust subtitle size */
+  }
+
+  .description p {
+      font-size: 14px; /* Adjust paragraph size for extra small screens */
+  }
+}

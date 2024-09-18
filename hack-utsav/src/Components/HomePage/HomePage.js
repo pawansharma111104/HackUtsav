@@ -4,6 +4,7 @@ import Countdown from './Counter/Countdown'
 import Header from '../Header/Header';
 import Themes from './CardContainer/Themes';
 import Timeline from './TimelineCont/Timeline';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Countdown></Countdown>
         <Timeline></Timeline>
         <Themes></Themes>
+        <Footer></Footer>
     </>
   );
 };

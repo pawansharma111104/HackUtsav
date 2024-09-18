@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './Header.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -13,9 +13,8 @@ const Header = () => {
         <Link to="/about" className="link">ABOUT US</Link>
         <Link to="/theme" className="link">THEME</Link>
         <Link to="/faq" className="link">FAQ</Link>
-        {/* Use Link for routing */}
-        {/* <Link to="/join" className="join-link">JOIN</Link> */}
-        <a href='https://forms.gle/nineQAgsR7nnR9S3A' target='blank' className='join-link'>Join</a>
+        <a href='https://forms.gle/nineQAgsR7nnR9S3A' target='_blank' className='join-link'>Join</a>
+        <a href='https://docs.google.com/presentation/d/1K8h6JBvCYgv3Ok57XZ_QUnfn3M497Z9H/edit?usp=drive_link&ouid=104494209996104943327&rtpof=true&sd=true' target='_blank' download className='download-link'>Submission Template</a>
       </div>
     </header>
   );

@@ -33,7 +33,9 @@
   .card-container:hover {
     transform: translateY(-1px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: var(--gradient-bg);
+    background-color: rgb(76, 195, 78);
+    border: green solid 2px;
+    
   }
   
   .card-image {
@@ -58,9 +60,9 @@
     transition: color 0.3s ease;
   }
   
-  .card-container:hover .card-title {
+  /* .card-container:hover .card-title {
     color: #fff;
-  }
+  } */
   
   /* Variables and General Button Styling */
   button {

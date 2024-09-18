@@ -1,5 +1,4 @@
-/* src/AboutUs.css */
-
+/* General Styling for the About Us page */
 .about-us-container {
     padding: 2.5rem;
     font-family: 'Poppins', sans-serif;
@@ -7,6 +6,7 @@
     background-color: #1c1e22; /* Dark background color */
 }
 
+/* Intro Section */
 .intro-section {
     text-align: center;
     margin-bottom: 3rem;
@@ -24,12 +24,14 @@
     color: #bdc3c7; /* Lighter gray text */
 }
 
+/* Section Styles */
 .mission-section,
 .hack-section,
 .participate-section,
 .vision-section,
 .organizers-section,
-.join-section {
+.join-section,
+.ncu-section {
     margin-bottom: 3rem;
     background: #2c2f33; /* Darker background for sections */
     padding: 2rem;
@@ -43,17 +45,20 @@
 .participate-section:hover,
 .vision-section:hover,
 .organizers-section:hover,
-.join-section:hover {
+.join-section:hover,
+.ncu-section:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* More noticeable shadow effect */
 }
 
+/* Section Headings */
 .mission-section h2,
 .hack-section h2,
 .participate-section h2,
 .vision-section h2,
 .organizers-section h2,
-.join-section h2 {
+.join-section h2,
+.ncu-section h2 {
     font-size: 2.2rem;
     margin-bottom: 1.2rem;
     color: #ecf0f1; /* Light text for headings */
@@ -67,16 +72,19 @@ h2 .icon {
     color: #76ff03; /* Same bright green for icons */
 }
 
+/* Section Paragraphs */
 .mission-section p,
 .hack-section p,
 .vision-section p,
 .organizers-section p,
-.join-section p {
+.join-section p,
+.ncu-section p {
     font-size: 1.15rem;
     line-height: 1.75;
     color: #bdc3c7; /* Light gray text for paragraphs */
 }
 
+/* Lists */
 ul {
     list-style-type: none;
     padding-left: 1.5rem;
@@ -97,6 +105,7 @@ ul li::before {
     margin-left: -1rem;
 }
 
+/* Map Section */
 .map-section {
     margin-bottom: 3rem;
     background: #2c2f33; /* Darker background for the section */
@@ -141,4 +150,71 @@ ul li::before {
 .map-section img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Zoom and shadow on hover */
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .intro-section h1 {
+        font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    .intro-section p {
+        font-size: 1.2rem; /* Smaller paragraph text */
+    }
+
+    .mission-section h2,
+    .hack-section h2,
+    .participate-section h2,
+    .vision-section h2,
+    .organizers-section h2,
+    .join-section h2,
+    .ncu-section h2{
+        font-size: 1.8rem; /* Smaller section headings */
+    }
+
+    .mission-section p,
+    .hack-section p,
+    .vision-section p,
+    .organizers-section p,
+    .join-section p,
+    .ncu-section p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+
+    .map-section img {
+        max-width: 100%; /* Full width image for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-section h1 {
+        font-size: 2rem; /* Further reduce heading size on extra small devices */
+    }
+
+    .intro-section p {
+        font-size: 1rem; /* Smaller paragraph size for extra small devices */
+    }
+
+    .mission-section h2,
+    .hack-section h2,
+    .participate-section h2,
+    .vision-section h2,
+    .organizers-section h2,
+    .join-section h2,
+    .ncu-section h2 {
+        font-size: 1.6rem; /* Smaller section headings */
+    }
+
+    .mission-section p,
+    .hack-section p,
+    .vision-section p,
+    .organizers-section p,
+    .join-section p,
+    .ncu-section p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
 }

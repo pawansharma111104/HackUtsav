@@ -1,7 +1,7 @@
 // src/AboutUs.js
 import React from 'react';
 import './AboutUs.css';
-import { FaRocket, FaUsers, FaLightbulb, FaNetworkWired, FaCogs } from 'react-icons/fa'; // Importing icons
+import { FaRocket, FaUniversity, FaUsers, FaLightbulb, FaNetworkWired, FaCogs } from 'react-icons/fa'; // Importing icons
 import Header from '../Header/Header';
 
 const AboutUs = () => {
@@ -38,6 +38,22 @@ const AboutUs = () => {
           <li>💡 <strong>Themes:</strong> AI, Blockchain, IoT, and more cutting-edge topics.</li>
         </ul>
       </section>
+      {/* About NCU Section */}
+<section className="ncu-section">
+  <h2><FaUniversity className="icon" /> About The Northcap University (NCU)</h2>
+  <p>
+    <em>The Northcap University (NCU)</em>, located in Gurugram, India, is a premier institution known for its commitment to academic excellence, innovation, and research. Established with the goal of fostering a holistic learning environment, NCU is dedicated to providing world-class education in various fields of engineering, management, law, and applied sciences.
+  </p>
+  <p>
+    NCU has been consistently ranked among the top universities in India, thanks to its highly qualified faculty, state-of-the-art facilities, and industry collaborations. It aims to empower students to be future leaders, innovators, and entrepreneurs, equipped with the skills to make a meaningful impact in the world.
+  </p>
+  <ul>
+    <li>🏛 <strong>Location:</strong> Gurugram, Haryana, India.</li>
+    <li>🎓 <strong>Programs:</strong> Undergraduate, Postgraduate, and Doctoral programs in various disciplines.</li>
+    <li>🤝 <strong>Industry Collaborations:</strong> NCU maintains strong ties with top companies and industries to provide hands-on learning and internships.</li>
+    <li>🌍 <strong>Global Exposure:</strong> With various international partnerships, NCU offers students opportunities for global exchange and collaborative projects.</li>
+  </ul>
+</section>
 
       {/* Why Participate */}
       <section className="participate-section">
@@ -46,7 +62,7 @@ const AboutUs = () => {
           <li>⚙ <strong>Build & Learn:</strong> Dive deep into new technologies and gain hands-on experience.</li>
           <li>🤝 <strong>Collaborate & Network:</strong> Work with like-minded peers and build professional connections.</li>
           <li>🛠 <strong>Showcase Your Skills:</strong> Pitch your project to industry judges.</li>
-          <li>🏅 <strong>Win Amazing Prizes:</strong> Compete for cash rewards, gadgets, and internships.</li>
+          <li>🏅 <strong>Win Amazing Prizes:</strong> Compete for cash rewards.</li>
         </ul>
       </section>
 
@@ -54,7 +70,7 @@ const AboutUs = () => {
       <section className="vision-section">
         <h2><FaLightbulb className="icon" /> Our Vision</h2>
         <p>
-          We envision a community of innovators who are not only technically sound but also socially responsible. Hack Mahotsav encourages creative thinking, teamwork, and entrepreneurship, preparing students to tackle real-world problems.
+          We envision a community of innovators who are not only technically sound but also socially responsible. Hackउत्सव encourages creative thinking, teamwork, and entrepreneurship, preparing students to tackle real-world problems.
         </p>
       </section>
 
@@ -62,7 +78,7 @@ const AboutUs = () => {
       <section className="organizers-section">
         <h2><FaCogs className="icon" /> The Organizers</h2>
         <p>
-        Hackउत्सव is organized by a dedicated team from <em>The Northcap University</em>, in collaboration with <strong>IEEE NCU</strong> and <strong>ACM NCU</strong>, supported by industry professionals and tech enthusiasts. Our goal is to provide an inclusive and enriching experience for all participants.
+        Hackउत्सव is organized by a dedicated team from <em>The Northcap University</em>, in collaboration with <strong>IEEE NCU</strong>, <strong>ACM NCU</strong>, <strong>ICT Academy</strong> and <strong>IIIC NCU</strong>, supported by industry professionals and tech enthusiasts. Our goal is to provide an inclusive and enriching experience for all participants.
         </p>
         <ul>
           {/* <li><strong>Event Coordinators:</strong> [Coordinator Name(s)]</li>

@@ -1,56 +1,100 @@
 .header {
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  position: relative;
+  left: 0;
+  right: 0;
+  flex-wrap: nowrap; /* No wrapping */
+}
+
+.left {
+  flex: 1;
+}
+
+.logo {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.join-link,
+.download-link {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #f0a500;
+}
+
+.join-link:hover,
+.download-link:hover {
+  background-color: #f0a500;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
     align-items: center;
-    padding: 10px 20px;
-    background-color: black;
   }
-  
-  .left {
-    flex: 1;
-  }
-  
-  .logo {
-    color: white;
-    margin: 0;
-  }
-  
+
   .right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row; /* Make links horizontal again */
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
-  
+
+  .link, .join-link, .download-link {
+    font-size: 16px; /* Adjust text size for mobile */
+  }
+
+  .logo {
+    font-size: 22px; /* Adjust logo size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .join-link, .download-link {
+    padding: 8px 16px; /* Adjust button padding for small screens */
+  }
+
   .link {
-    color: white;
-    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .logo {
     font-size: 18px;
-    font-weight: bold;
   }
-  
-  .join-link {
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .link:hover {
-    color: #f0a500; /* Change color on hover */
 }
-
-.join-link:hover {
-    background-color: #f0a500; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
-    transform: scale(1.05); /* Slightly increase size on hover */
-    transition: all 0.3s ease; /* Smooth transition effect */
-}
-
-  
