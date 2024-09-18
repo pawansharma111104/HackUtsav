@@ -56,18 +56,21 @@ const FAQ = () => {
 
   return (
     <>
-    <Header></Header>
-    <section className="faq">
-      <div className="container">
-        <div className="section-title">
-          <h1>FAQ's</h1>
-        </div>
+      <Header></Header>
+      <section className="faq">
+        <div className="container">
+          <div className="section-title">
+            <h1>FAQ's</h1>
+          </div>
+          
         <div className="faq-content">
           <FAQSection title="Registration & Event Details" items={registrationAndEventDetails} />
           <FAQSection title="Participation & Venue" items={participationAndVenue} />
         </div>
-      </div>
+</div>
+      
     </section>
+    <Footer></Footer>
     </>
   );
 };
