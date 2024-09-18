@@ -11,8 +11,11 @@ const Footer = () => {
         <img src="https://res.cloudinary.com/dvhislzt0/image/upload/v1726563541/lkyhrzp58vrh206rlzwz.jpg" alt="ACM NCU Logo" className="org-logo" />
         <img src="https://res.cloudinary.com/dvhislzt0/image/upload/v1726669713/ceugks6yny9kc6ix56fl.png" alt="ICT ACADEMY Logo" className="org-logo" />
         <img src="https://res.cloudinary.com/dvhislzt0/image/upload/v1726670401/IIC_judrn1.png" alt="IIC Logo" className="org-logo" />
-
-        
+      </div>
+      <div className="footer-contact">
+        <p>For any queries, contact:</p>
+        <p>Madhur: +91 93545 08072</p>
+        <p>Raman: +91 99719 95290</p>
       </div>
     </footer>
   );
