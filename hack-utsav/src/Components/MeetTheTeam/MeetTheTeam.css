@@ -1,0 +1,53 @@
+.team-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team-member {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Bold the names */
+  .team-member p {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px; /* You can adjust the size here if needed */
+  }
+  
+  @media (max-width: 768px) {
+    .team-grid {
+      justify-content: center;
+    }
+  }
+  
+  

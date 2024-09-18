@@ -5,6 +5,7 @@ import Themes from './Components/Themepage/Themes';
 import Home from './Components/HomePage/HomePage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FAQSection from './Components/FAQpage/FAQSection';
+import MeetTheTeam from './Components/MeetTheTeam/MeetTheTeam'
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/meettheteam" element={<MeetTheTeam />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/theme" element={<Themes />} />
         <Route path="/faq" element={<FAQSection />} />
