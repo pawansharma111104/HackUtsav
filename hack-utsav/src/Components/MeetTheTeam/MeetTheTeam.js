@@ -44,11 +44,11 @@ const Team = () => {
 
   const studentCoordinators = [
     { name: 'Madhur', photo: 'https://res.cloudinary.com/ddznylzdr/image/upload/v1726669406/nqibhnpzqxghf2clllur.jpg' },
-    { name: 'Priyanshu', photo: 'https://example.com/photos/priyanshu.jpg' },
-    { name: 'Pawan', photo: 'https://example.com/photos/pawan.jpg' },
-    { name: 'Raman', photo: 'https://example.com/photos/raman.jpg' },
-    { name: 'Rahul', photo: 'https://example.com/photos/rahul.jpg' },
-    { name: 'Shubh', photo: 'https://example.com/photos/shubh.jpg' },
+    { name: 'Priyanshu Raj', photo: 'https://res.cloudinary.com/dvhislzt0/image/upload/v1726723962/priyanshu_bk4jy2.jpg' },
+    { name: 'Pawan Sharma', photo: 'https://res.cloudinary.com/dvhislzt0/image/upload/v1726723938/pawan_photo_jergrp.jpg' },
+    { name: 'Raman', photo: 'https://res.cloudinary.com/dvhislzt0/image/upload/v1726723846/raman_stnia1.jpg' },
+    { name: 'Rahul Dewatwal', photo: 'https://res.cloudinary.com/dvhislzt0/image/upload/v1726723918/rahul_yyki2b.jpg' },
+    { name: 'Shubh', photo: 'https://res.cloudinary.com/dvhislzt0/image/upload/v1726724649/WhatsApp_Image_2024-09-19_at_11.13.37_f9772cca_qujjbi.jpg' },
   ].sort((a, b) => a.name.localeCompare(b.name)); // Sort names alphabetically
 
   return (
