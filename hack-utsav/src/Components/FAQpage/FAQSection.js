@@ -64,8 +64,8 @@ const FAQ = () => {
           </div>
           
         <div className="faq-content">
-          <FAQSection title="Registration & Event Details" items={registrationAndEventDetails} />
-          <FAQSection title="Participation & Venue" items={participationAndVenue} />
+          <FAQSection title="Hackathon Guidelines" items={registrationAndEventDetails} />
+          <FAQSection title="Rewards and Logistics" items={participationAndVenue} />
         </div>
 </div>
       
