@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 import Themes from './CardContainer/Themes';
 import Timeline from './TimelineCont/Timeline';
 import Footer from '../Footer/Footer';
-
+import ChatBot from '../Chatbot/ChatBot';
 const Home = () => {
   return (
     <>
@@ -14,6 +14,7 @@ const Home = () => {
         <Countdown></Countdown>
         <Timeline></Timeline>
         <Themes></Themes>
+        <ChatBot></ChatBot>
         <Footer></Footer>
     </>
   );

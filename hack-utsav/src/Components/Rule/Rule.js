@@ -4,6 +4,7 @@ import './Rule.css';
 import { FaGavel, FaCalendarAlt, FaUsers, FaClipboardList, FaCode, FaHandshake } from 'react-icons/fa'; // Importing icons
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import ChatBot from '../Chatbot/ChatBot';
 
 const Rules = () => {
   return (
@@ -59,6 +60,7 @@ const Rules = () => {
           </ul>
         </section>
       </div>
+      <ChatBot></ChatBot>
       <Footer></Footer>
     </>
   );

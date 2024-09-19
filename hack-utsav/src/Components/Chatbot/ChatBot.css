@@ -1,81 +1,83 @@
 /* Chatbot Container */
 .chatbot-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    max-width: 400px; /* Adjust as needed */
-    height: 500px; /* Adjust to fit the full height */
-    border: none;
-    z-index: 1000;
-    background-color: #000; /* Matches footer background */
-    transition: height 0.3s ease;
-  }
-  
-  /* Closed State of Chatbot */
-  .chatbot-container.closed {
-    height: 50px; /* Height when minimized */
-    overflow: hidden;
-  }
-  
-  /* Open State of Chatbot */
-  .chatbot-container.open {
-    height: 500px; /* Full height when open */
-  }
-  
-  /* Chatbot iFrame */
-  .chatbot-container iframe {
+  position: fixed; /* Keep the chatbot fixed in one position */
+  bottom: 20px;    /* Set the distance from the bottom */
+  right: 20px;     /* Set the distance from the right */
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  height: 500px;    /* Adjust to fit the full height */
+  border: none;
+  z-index: 1000;
+  background-color: #000; /* Matches footer background */
+  transition: height 0.3s ease, width 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
 
-    height: 100%;
-    border: none;
+/* Closed State of Chatbot */
+.chatbot-container.closed {
+  width: 60px;   /* Minimized width */
+  height: 60px;  /* Minimized height */
+  overflow: hidden;
+  border-radius: 50px; /* Make it circular when minimized */
+}
+
+/* Open State of Chatbot */
+.chatbot-container.open {
+  width: 100%;    /* Full width when open */
+  height: 500px;  /* Full height when open */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Chatbot iFrame */
+.chatbot-container iframe {
+  height: 100%;
+  border: none;
+}
+
+/* Toggle Button */
+.chatbot-toggle {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #ff008b; /* Color of the toggle button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+  background-color: #e6007f; /* Hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chatbot-container {
+    height: 400px;
   }
-  
-  /* Toggle Button */
+
   .chatbot-toggle {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    background-color: #ff008b; /* Color of the toggle button */
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
   }
-  
-  .chatbot-toggle:hover {
-    background-color: #e6007f; /* Hover effect */
+}
+
+@media (max-width: 480px) {
+  .chatbot-container {
+    height: 300px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .chatbot-container {
-      /* max-width: 100%; */
-      height: 400px;
-    }
-  
-    .chatbot-toggle {
-      width: 35px;
-      height: 35px;
-      font-size: 20px;
-    }
+
+  .chatbot-toggle {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
-  
-  @media (max-width: 480px) {
-    .chatbot-container {
-      height: 300px;
-    }
-  
-    .chatbot-toggle {
-      width: 30px;
-      height: 30px;
-      font-size: 18px;
-    }
-  }
-  
+}

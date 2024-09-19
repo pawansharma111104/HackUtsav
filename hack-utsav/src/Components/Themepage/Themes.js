@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 // import climate from '../assets/climate.gif';
 // import law from '../assets/law.png';
 import Footer from "../Footer/Footer";
+import ChatBot from '../Chatbot/ChatBot';
 function Themes() {
   return (
     <>
@@ -108,6 +109,7 @@ function Themes() {
         />
       </div>
     </div>
+    <ChatBot></ChatBot>
     <Footer></Footer>
     </>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import './MeetTheTeam.css'; // Import a CSS file for styling
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
+import ChatBot from '../Chatbot/ChatBot';
 
 const Team = () => {
   const patrons = [
@@ -105,6 +105,7 @@ const Team = () => {
               ))}
           </div>
       </div>
+      <ChatBot></ChatBot>
       <Footer></Footer></>
   );
 };

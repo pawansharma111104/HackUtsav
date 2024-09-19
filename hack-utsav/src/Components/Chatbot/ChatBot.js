@@ -1,9 +1,8 @@
-// src/ChatBot.js
 import React, { useState } from 'react';
 import './ChatBot.css';
 
 const ChatBot = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);  // Initialize as false to keep it minimized
 
   const toggleChatBox = () => {
     setIsOpen(!isOpen);
