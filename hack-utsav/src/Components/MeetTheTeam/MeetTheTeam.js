@@ -1,6 +1,7 @@
 import React from 'react';
 import './MeetTheTeam.css'; // Import a CSS file for styling
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 
 const Team = () => {
@@ -103,7 +104,8 @@ const Team = () => {
                   </div>
               ))}
           </div>
-      </div></>
+      </div>
+      <Footer></Footer></>
   );
 };
 

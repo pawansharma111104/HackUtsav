@@ -108,6 +108,7 @@ function Themes() {
         />
       </div>
     </div>
+    <Footer></Footer>
     </>
   );
 }
