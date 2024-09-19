@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './FAQ.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-
+import ChatBot from '../Chatbot/ChatBot';
 const FAQItem = ({ question, answer, id, isOpen, onToggle }) => (
   <div className="faq-item">
     <div className="faq-question" onClick={() => onToggle(id)}>
@@ -70,6 +70,7 @@ const FAQ = () => {
 </div>
       
     </section>
+    <ChatBot></ChatBot>
     <Footer></Footer>
     </>
   );
