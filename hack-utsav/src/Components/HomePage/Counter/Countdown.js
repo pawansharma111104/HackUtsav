@@ -3,7 +3,7 @@ import './Count.css';
 
 const Countdown = () => {
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2024-09-30T23:59:59'); // 15th October 2024, 9:00 AM
+    const eventDate = new Date('2024-10-05T23:59:59'); // 15th October 2024, 9:00 AM
     const currentTime = new Date();
     const difference = eventDate - currentTime;
 

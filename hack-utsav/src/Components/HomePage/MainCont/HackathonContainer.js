@@ -37,7 +37,7 @@ const HackathonContainer = () => {
           </button>
           <button
             className="discord-btn"
-            onClick={() => window.open('https://discord.gg/PDm9eG6B', '_blank')}
+            onClick={() => window.open('https://discord.gg/NBXg2gsyCX', '_blank')}
           >
             <FaDiscord className="icon" /> Discord
           </button>
