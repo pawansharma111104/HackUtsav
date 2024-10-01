@@ -3,33 +3,41 @@ import Slider from 'react-slick';
 import './PartnersCarousel.css'; // Create this file for custom styles
 
 const PartnersCarousel = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,  // Number of logos to show at once
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, // Number of logos to show at once
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2, // Show 2 logos at once on mobile
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2, // Show 2 logos on smaller mobile screens
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
+      
 
   const partners = [
     { id: 1, logo: 'https://res.cloudinary.com/dvhislzt0/image/upload/v1726563281/iqhrvlzbolydrscqnxv7.png', name: 'Partner 1' },

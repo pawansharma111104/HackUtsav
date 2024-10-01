@@ -1,77 +1,108 @@
 .footer {
     background-color: black;
-    padding: 20px;
-    text-align: center;
+    padding: 40px 20px;
     color: white;
     position: relative;
-    bottom: 0;
-
-    /* width: 100%; */
+    font-family: 'Arial', sans-serif;
 }
 
-.footer-text {
-    margin: 0;
-    font-size: 25px;
-    margin-bottom: 10px; /* Adds space between text and logos */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+/* About section aligned to the left */
+.footer-about {
+    flex: 1 1 30%;
+}
+
+/* Map section aligned in the center */
+.footer-map {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+/* Follow Us section aligned to the bottom-left */
+.footer-follow {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    text-align: left;
+}
+
+/* Contact section aligned to the right */
+.footer-contact {
+    flex: 1 1 20%;
+    text-align: middle;
+}
+
+/* Styling for the text */
+.footer-about p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-about h3, .footer-map h3, .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-.footer-logos {
+/* Centering the map iframe */
+.footer-map iframe {
+    border-radius: 5px;
+    width: 100%; /* Make iframe responsive */
+    max-width: 300px; /* Optional: max width for larger screens */
+    height: 200px; /* Set fixed height for iframe */
+}
+
+/* Styling for social icons */
+.social-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between logos */
-    margin-bottom: 10px; /* Space between logos and contact info */
-    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 15px;
 }
 
-.org-logo {
-    height: 40px; /* Adjust the size as necessary */
-    width: auto;
-}
-
-.footer-contact {
+.social-icon {
     margin-top: 10px;
+    width: 35px;
+    height: 35px;
 }
 
+/* Contact section styling */
 .footer-contact p {
-    margin: 5px 0;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ddd;
 }
 
 @media (max-width: 768px) {
-    .footer-text {
-        font-size: 20px; /* Adjust the font size for smaller screens */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .footer-logos {
-        gap: 15px; /* Reduce space between logos on smaller screens */
+    .footer-about, .footer-map, .footer-contact {
+        margin-bottom: 20px;
+        flex-basis: 100%; /* Full width on smaller screens */
     }
 
-    .org-logo {
-        height: 30px; /* Smaller size for mobile */
-    }
-    
-    .footer-contact p {
-        font-size: 14px; /* Smaller text for mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-text {
-        font-size: 18px; /* Further reduce font size on extra small screens */
+    .footer-follow {
+        position: static; /* Static position on smaller screens */
+        margin-top: 20px; /* Add margin for spacing */
     }
 
-    .footer-logos {
-        flex-direction: column; /* Stack logos vertically on very small screens */
-        gap: 10px; /* Even smaller space between logos */
-    }
-
-    .org-logo {
-        height: 25px; /* Further reduce logo size on extra small screens */
-    }
-    
-    .footer-contact p {
-        font-size: 12px; /* Further reduce text size on extra small screens */
+    .footer-map iframe {
+        max-width: 100%; /* Ensure iframe takes full width on small screens */
     }
 }
