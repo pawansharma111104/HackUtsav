@@ -1,0 +1,43 @@
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 300px; /* Adjust the height to match your design */
+  }
+  
+  .carousel-heading {
+    text-align: center;
+    margin-bottom: -50px;
+    font-size: 50px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .partner-logo {
+    width: 250px; /* Enforce a fixed width for all logos */
+    height: 250px; /* Enforce a fixed height for all logos */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+  }
+  
+  /* Responsive adjustments */
+  
+  /* Tablets and larger mobile devices */
+  @media (max-width: 768px) {
+    .partner-logo {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 480px) {
+    .partner-logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

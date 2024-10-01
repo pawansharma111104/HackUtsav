@@ -7,6 +7,7 @@ import Timeline from './TimelineCont/Timeline';
 import Footer from '../Footer/Footer';
 import ChatBot from '../Chatbot/ChatBot';
  import CarouselComponent from './Extended/CarouselComponent';
+ import PartnersCarousel from './Partnership/PartnersCarousel';
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
         <Timeline></Timeline>
         <Themes></Themes>
         <ChatBot></ChatBot>
+        <PartnersCarousel/>
         <Footer></Footer>
     </>
   );

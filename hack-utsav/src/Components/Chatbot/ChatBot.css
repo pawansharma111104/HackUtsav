@@ -1,31 +1,32 @@
 /* Chatbot Container */
 .chatbot-container {
-  position: fixed; /* Keep the chatbot fixed in one position */
-  bottom: 20px;    /* Set the distance from the bottom */
-  right: 20px;     /* Set the distance from the right */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   width: 100%;
-  max-width: 400px; /* Adjust as needed */
-  height: 500px;    /* Adjust to fit the full height */
+  max-width: 400px;
+  height: 500px;
   border: none;
   z-index: 1000;
-  background-color: #000; /* Matches footer background */
+  background-color: #000;
   transition: height 0.3s ease, width 0.3s ease;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+  box-shadow: none;
 }
 
 /* Closed State of Chatbot */
 .chatbot-container.closed {
-  width: 60px;   /* Minimized width */
-  height: 60px;  /* Minimized height */
+  width: 40px;
+  height: 40px;
   overflow: hidden;
-  border-radius: 50px; /* Make it circular when minimized */
+  border-radius: 50%;
+  background-color: transparent;
 }
 
 /* Open State of Chatbot */
 .chatbot-container.open {
-  width: 100%;    /* Full width when open */
-  height: 500px;  /* Full height when open */
-  border-radius: 10px; /* Optional: Rounded corners */
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
 }
 
 /* Chatbot iFrame */
@@ -37,47 +38,96 @@
 /* Toggle Button */
 .chatbot-toggle {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  background-color: #ff008b; /* Color of the toggle button */
+  right: 0px;
+  bottom: 0px;
+  background-color: #ff008b;
   color: white;
   border: none;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  padding: 0;
+  line-height: 1;
+  box-shadow: none;
 }
 
+.chatbot-toggle img {
+  width: 60%; /* Adjust size of the icon relative to the button */
+  height: 60%; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Hover effect */
 .chatbot-toggle:hover {
-  background-color: #e6007f; /* Hover effect */
+  background-color: #e6007f;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .chatbot-container {
-    height: 400px;
-  }
-
-  .chatbot-toggle {
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-  }
-}
-
+/* Mobile portrait */
 @media (max-width: 480px) {
   .chatbot-container {
+    max-width: 280px;
     height: 300px;
+    bottom: 10px;
+    right: 10px;
   }
 
   .chatbot-toggle {
     width: 30px;
     height: 30px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chatbot-toggle img {
+    width: 50%; /* Reduce icon size for smaller mobile screens */
+    height: 50%; /* Maintain aspect ratio */
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 600px) {
+  .chatbot-container {
+    max-width: 320px;
+    height: 350px;
+  }
+
+  .chatbot-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chatbot-toggle img {
+    width: 55%; /* Adjust size for landscape mode */
+    height: 55%;
+  }
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .chatbot-container {
+    max-width: 350px;
+    height: 400px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .chatbot-toggle {
+    width: 35px;
+    height: 35px;
     font-size: 18px;
+  }
+
+  .chatbot-toggle img {
+    width: 55%; /* Icon adjustment for tablet */
+    height: 55%;
   }
 }
