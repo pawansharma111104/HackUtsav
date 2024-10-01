@@ -12,15 +12,7 @@
   }
   
   .carousel-heading{
-    font-size: 3.5rem; /* Larger font size */
     color: #28a745;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #28a745 30%, #85e085);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeInDown 1s ease-out;
   }
 
   .carousel-slide {
