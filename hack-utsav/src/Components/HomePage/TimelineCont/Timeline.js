@@ -4,7 +4,7 @@ const Timeline = () => {
   return (
     <div className="timeline">
       <div className="timeline-item">
-        <img src="https://res.cloudinary.com/dumewov2o/image/upload/v1726652463/dktkdaqwfvbnwdy0x0xt.png" alt="Timeline" className="timeline-image" />
+        <img src="https://res.cloudinary.com/dv0pitmjz/image/upload/v1727690701/Regist_jawcwn.png" alt="Timeline" className="timeline-image" />
       </div>
     </div>
   );

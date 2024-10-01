@@ -40,8 +40,10 @@
 }
 
 /* Hackathon image with light effect */
+/* Hackathon image with light effect */
 .hackathon-image {
-    max-width: 100%;
+    max-width: 800px;
+    max-height: 600px; /* Limits the maximum height of the image */
     height: auto;
     opacity: 0.8; /* Image blends with background */
     transition: all 0.3s ease; /* Smooth hover effect */
@@ -61,6 +63,7 @@
     transform: scale(1.05); /* Slight zoom-in effect */
     box-shadow: 0 0 50px 25px rgba(133, 224, 158, 0.8); /* Intensified light glow on hover */
 }
+
 
 /* Right section (event details) */
 .right-section {

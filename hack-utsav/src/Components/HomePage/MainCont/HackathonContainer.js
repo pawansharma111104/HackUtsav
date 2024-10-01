@@ -8,7 +8,7 @@ const HackathonContainer = () => {
     <div className="hackathon-container">
       <div className="left-section">
         {/* Add image in left section */}
-        <img src="https://res.cloudinary.com/dvhislzt0/image/upload/v1726653273/mrgadfwbwb7r9opn23ob.jpg" alt="Hackathon" className="hackathon-image" />
+        <img src="https://res.cloudinary.com/dv0pitmjz/image/upload/v1727717409/HackUtsav_poster_xiyufz.jpg" alt="Hackathon" className="hackathon-image" />
         {/* <h1 className="hackathon-title">HACKउत्सव 1.O 2024</h1> */}
       </div>
       

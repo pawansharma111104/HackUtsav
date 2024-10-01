@@ -6,10 +6,12 @@ import Themes from './CardContainer/Themes';
 import Timeline from './TimelineCont/Timeline';
 import Footer from '../Footer/Footer';
 import ChatBot from '../Chatbot/ChatBot';
+ import CarouselComponent from './Extended/CarouselComponent';
 const Home = () => {
   return (
     <>
     <Header></Header>
+    <CarouselComponent></CarouselComponent>
         <HackathonContainer></HackathonContainer>
         <Countdown></Countdown>
         <Timeline></Timeline>
