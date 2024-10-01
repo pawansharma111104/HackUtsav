@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FAQSection from './Components/FAQpage/FAQSection';
 import MeetTheTeam from './Components/MeetTheTeam/MeetTheTeam'
 import Rules from './Components/Rule/Rule';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <>
