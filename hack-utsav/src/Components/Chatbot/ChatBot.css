@@ -1,6 +1,5 @@
 /* Chatbot Container */
 .chatbot-container {
-
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -10,24 +9,12 @@
   border: none;
   z-index: 1000;
   background-color: #000;
-  transition: all 0.3s ease; /* Ensure smooth transition for all properties */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background-color: #000;
   transition: height 0.3s ease, width 0.3s ease;
   box-shadow: none;
 }
 
 /* Closed State of Chatbot */
 .chatbot-container.closed {
-  width: 60px !important;  /* Ensure width and height are equal */
-  height: 60px !important; /* Keep height equal to width */
-  border-radius: 50% !important; /* Force circular shape */
-  background-color: #000 !important; /* Ensure background color is black */
-  overflow: hidden !important; /* Hide any overflowing content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
   overflow: hidden;
@@ -40,14 +27,10 @@
   width: 100%;
   height: 500px;
   border-radius: 10px;
-  width: 100%;
-  height: 500px;
-  border-radius: 10px;
 }
 
 /* Chatbot iFrame */
 .chatbot-container iframe {
-  width: 100%;
   height: 100%;
   border: none;
 }
@@ -55,15 +38,12 @@
 /* Toggle Button */
 .chatbot-toggle {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  background-color: #ff008b;
   right: 0px;
   bottom: 0px;
   background-color: #ff008b;
   color: white;
   border: none;
-  border-radius: 50% !important; /* Force button to stay circular */
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
@@ -84,7 +64,6 @@
 
 /* Hover effect */
 .chatbot-toggle:hover {
-  background-color: #e6007f;
   background-color: #e6007f;
 }
 
@@ -134,10 +113,6 @@
 
 /* Tablets and below */
 @media (max-width: 768px) {
-  .chatbot-container.closed {
-    width: 50px !important;  /* Ensuring it stays circular */
-    height: 50px !important;  /* Equal width and height */
-    border-radius: 50% !important; /* Force circular shape */
   .chatbot-container {
     max-width: 350px;
     height: 400px;
@@ -148,23 +123,7 @@
   .chatbot-toggle {
     width: 35px;
     height: 35px;
-    font-size: 20px;
-    border-radius: 50% !important; /* Force button circular */
-  }
-}
-
-@media (max-width: 480px) {
-  .chatbot-container.closed {
-    width: 45px !important;  /* Smaller but still circular */
-    height: 45px !important;  /* Equal width and height */
-    border-radius: 50% !important; /* Force circular shape */
-  }
-
-  .chatbot-toggle {
-    width: 30px;
-    height: 30px;
     font-size: 18px;
-    border-radius: 50% !important; /* Ensure the button stays circular */
   }
 
   .chatbot-toggle img {
@@ -172,4 +131,3 @@
     height: 55%;
   }
 }
-
