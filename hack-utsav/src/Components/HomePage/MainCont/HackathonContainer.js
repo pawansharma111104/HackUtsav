@@ -14,14 +14,26 @@ const HackathonContainer = () => {
       </div>
 
       <div className="right-section">
+        <div className="powered-by">
+          <p>Powered by</p>
+          
+        </div>
+        <div className='right-section-1'>
+        <img
+            src="https://res.cloudinary.com/dv0pitmjz/image/upload/v1728042794/vadwzncagbzogtjn8sqs.jpg"  
+            alt="Sponsor Logo"
+            className="sponsor-logo"
+          />  
+        </div>
         <h2 className="event-subtitle">Innovate, Create & Compete</h2>
         <p className="hackathon-description">
           Join the technical hackathon and push the limits of your mind! Code, innovate, and create something amazing.
         </p>
+        
         <div className="button-group">
           <button
             className="register-btn"
-            onClick={() => window.open('https://forms.gle/nineQAgsR7nnR9S3A', '_blank')}
+            onClick={() => window.open('https://unstop.com/p/hackutasava-10-the-northcap-university-ncu-gurgaon-1172880', '_blank')}
           >
             REGISTER NOW
           </button>
@@ -41,7 +53,7 @@ const HackathonContainer = () => {
           </button>
           <button
             className="instagram-btn"
-            onClick={() => window.open('https://www.instagram.com', '_blank')}
+            onClick={() => window.open('https://www.instagram.com/hackutsav_ncu/', '_blank')}
           >
             <FaInstagram className="icon" />
           </button>

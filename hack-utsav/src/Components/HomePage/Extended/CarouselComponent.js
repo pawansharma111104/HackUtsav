@@ -27,7 +27,7 @@ const CarouselComponent = () => {
   };
 
   const emojis = '🚀🎉'; // Emojis for highlighting the message
-  const text = `${emojis} Registration extended to 05/10/2024`;
+  const text = `${emojis} Registration extended to 12/10/2024`;
   const infiniteText = Array(10).fill(text); // Create an array of 10 text elements
 
   return (

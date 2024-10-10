@@ -86,7 +86,7 @@
 /* Hackathon description */
 .hackathon-description {
     font-size: 1.3rem;
-    margin: 25px 0;
+    margin: 20px 0;
     line-height: 1.7;
     color: #eefaf2;
 }
@@ -120,8 +120,8 @@
 }
 
 .whatsapp-btn,
-.discord-btn
-{
+.discord-btn,
+.instagram-btn {
     flex: 1; /* Distribute equal width to each button */
     padding: 10px;
     border: none;
@@ -132,20 +132,6 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-}
-
-.instagram-btn{
-    flex: 1; /* Distribute equal width to each button */
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-
 }
 
 .whatsapp-btn {
@@ -214,26 +200,31 @@
     margin: auto;
 }
 
-@for $i from 1 through 60 {
-    .h .c:nth-of-type(#{$i}) {
-        box-shadow: 3px 0px rgba(255, 255, 255, -($i/40)), 6px -5px rgba(10, 0, 0, -($i/40));
-        width: ($i * 6) + 0px;
-        height: ($i * 1) + 0px;
-        right: ($i * 10) + 0px;
-        bottom: ($i * 10) + 0px;
-        -webkit-filter: blur($i/3 + 8px);
-        transform-origin: ($i * 4) + 0px ($i * 2) + 0px;
-        animation: spin 3s ($i/10) + 0s linear infinite;
-        background: rgba(63 + ($i * 3), 241 + ($i * 1), 187, 1 - ($i/80));
-    }
+.sponsor-logo {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Ensure the logo is responsive */
+    border-radius: 8px;
+    filter: none !important; /* No grayscale or other filters */
+    opacity: 1 !important;
+    margin: 0px auto;
+    border-style: none;
+    border: 10px solid white;
+    border-left: 20px solid white;
+    border-right: 20px solid white; /* Apply a white border */
+    
+}
+.powered-by{
+    font-size: 2.5rem;
+}
+/* Remove any potential surrounding borders or shadows */
+img {
+    border: none; /* No additional border */
+    box-shadow: none; /* No shadows that could cause lines */
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
-/* Responsive design */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .hackathon-container {
         flex-direction: column;
